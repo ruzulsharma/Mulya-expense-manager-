@@ -17,7 +17,7 @@
  <property name="hibernate.connection.username">root</property>
  
  <!-- Password to connect to MySQL, Provide your correct password -->
- <property name="hibernate.connection.password">surajsql</property>
+ <property name="hibernate.connection.password">root1</property>
  <!-- Echo all executed SQL to stdout -->
 <property name="hibernate.show_sql">true</property>
  <!-- Dialect required between hibernate and MySQL -->
@@ -36,6 +36,8 @@
  <mapping class="com.entities.Mulya.UserDetails" />
  <mapping class="com.entities.Mulya.Category"/>
  <mapping class="com.entities.Mulya.PaymentMethod"/>
- 
+ <mapping class="com.entities.Mulya.Income"/>
+ <mapping class="com.entities.Mulya.Date"/>
+
  </session-factory>
 </hibernate-configuration>

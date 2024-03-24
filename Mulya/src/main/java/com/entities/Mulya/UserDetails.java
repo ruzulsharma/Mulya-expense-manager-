@@ -5,19 +5,18 @@ import javax.persistence.*;
 @Table(name = "usersDetails")
 public class UserDetails {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int  UserId;
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String  UserId;
 	private String username;
 	private String email;
 	private String mob_no;
-	private double Salary;
 	
 	//Getter and Setter
-	public int getUserId() {
+	public String getUserId() {
 		return UserId;
 	}
-	public void setUserId(int userId) {
-		UserId = userId;
+	public void setUserId(String userId) {
+		this.UserId = userId;
 	}
 	public String getUsername() {
 		return username;
@@ -37,20 +36,14 @@ public class UserDetails {
 	public void setEmail(String email) {
 		this.email = email;
 	}	
-	public double getSalary() {
-		return Salary;
-	}
-	public void setSalary(double salary) {
-		Salary = salary;
-	}
+	
 	//Constructor
-	public UserDetails(int userId, String username, String mob_no, String email , double Salary) {
+	public UserDetails(String userId, String username, String mob_no, String email ) {
 		super();
 		this.UserId = userId;
 		this.username = username;
 		this.mob_no = mob_no;
 		this.email = email;
-		this.Salary = Salary;
 	}
 	public UserDetails() {
 		super();

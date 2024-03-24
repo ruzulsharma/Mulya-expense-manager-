@@ -37,7 +37,6 @@
  <mapping class="com.entities.Mulya.Category"/>
  <mapping class="com.entities.Mulya.PaymentMethod"/>
  <mapping class="com.entities.Mulya.Income"/>
- <mapping class="com.entities.Mulya.Date"/>
-
+ 
  </session-factory>
 </hibernate-configuration>
